@@ -1,0 +1,55 @@
+{
+  "name": "fed-technical-test-jnr",
+  "version": "0.0.1",
+  "description": "fed-technical-test-jnr",
+  "main": "webpack-dev-server",
+  "private": true,
+  "scripts": {
+    "start": "webpack serve --mode development --env development --config webpack.dev.js --profile --progress",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "ie 11"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "17.0.14",
+    "@types/react-dom": "17.0.9",
+    "autoprefixer": "^10.3.4",
+    "babel-plugin-styled-components": "1.13.2",
+    "clean-webpack-plugin": "3.0.0",
+    "css-loader": "6.2.0",
+    "file-loader": "6.2.0",
+    "html-webpack-plugin": "5.3.2",
+    "node-sass": "6.0.1",
+    "postcss": "^8.3.6",
+    "postcss-loader": "^6.1.1",
+    "postcss-nested": "^5.0.6",
+    "prettier": "2.3.2",
+    "sass-loader": "12.1.0",
+    "source-map-loader": "3.0.0",
+    "style-loader": "2.0.0",
+    "ts-loader": "^9.2.5",
+    "typescript": "4.3.5",
+    "webpack": "5.45.1",
+    "webpack-cli": "4.7.2",
+    "webpack-dev-server": "3.11.2",
+    "webpack-merge": "5.8.0"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  }
+}

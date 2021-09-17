@@ -1,0 +1,101 @@
+<!--
+  This file provides a basic skeleton to display the application.
+
+  This file is NOT relevant to this test and provides only stylistic components.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>application</title>
+
+  <base href="/" />
+  <link rel="stylesheet" href="https://master.components.frontend.modicagroup.com/assets/styles/root.modica.css" />
+  <link rel="stylesheet" href="https://master.omni.frontend.modicagroup.com/static/css/theme-modica.css" />
+  <link rel="stylesheet" href="https://master.components.frontend.modicagroup.com/assets/styles/bundle.css" />
+</head>
+<body>
+  <div class="header" role="banner">
+    <div>
+      <div class="header-logo"><a href="#" aria-label="Homepage" title="Back to Home"></a></div>
+      <div class="header-nav">
+        <ul>
+          <li><a href="#" class="selected" title="Home">Home</a></li>
+          <li><a href="#" title="Link">Link</a></li>
+        </ul>
+      </div>
+
+      <div class="hamburger">
+        <div class="top-bun"></div>
+        <div class="meat"></div>
+        <div class="bottom-bun"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="user-status-bar__wrapper" role="complementary">
+    <div class="user-status-bar">
+      <span class="pre-username">Logged in as</span>
+      <span class="status-bar-text">yourself</span>
+      <a href="#" class="status-bar-text active last-login-link">
+        (last login: <span class="last-login-loading">Today</span>)
+        <span class="tooltip-text">DateTime</span>
+      </a>
+      <a role="button" tabindex="0" class="status-bar-text active logout-button button button-danger" href="#">
+        Logout
+      </a>
+    </div>
+  </div>
+
+  <div id="page-content">
+    <div role="navigation" aria-label="Main" id="navigation" class="navigation">
+      <input id="selected-navigation" type="hidden" value="navigation-">
+      <ul id="tier-one-nav" class="tier-one-nav">
+        <li class="tier-one-nav-item open">
+          <a class="tier-one-nav-content icon-arrow-down" href="#">Title</a>
+          <ul class="tier-two-nav" style="display:block">
+            <li class="tier-two-nav-item">
+              <a class="tier-two-nav-content" href="#">List item</a>
+            </li>
+            <li class="tier-two-nav-item">
+              <a class="tier-two-nav-content" href="#">List item</a>
+            </li>
+            <li class="tier-two-nav-item">
+              <a class="tier-two-nav-content" href="#">List item</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="tier-one-nav-item">
+          <a class="tier-one-nav-content icon-arrow-down" href="#">Title</a>
+        </li>
+
+        <li class="icon-logout mobile-logout-container"><a class="mobile-logout-content" href="/logout" title="Logout">Log Out</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <div class="tabs" style="display: block;">
+        <div class="tabs__content no-padding" style="display:block;border:none">
+          <div id="app"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
